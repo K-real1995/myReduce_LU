@@ -7,6 +7,7 @@ public class Realisation {
         for (int i = 1; i < param.length; i++){
             int func = f.solve(driver.getLast(), param[i]);
             driver.add(func);
+            driver.remove(0);
 
         }
         return driver.getLast();
